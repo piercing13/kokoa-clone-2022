@@ -1,0 +1,131 @@
+.find-features{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    gap: 5px;
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.find-features>*{
+    flex: 1;
+    
+    padding: 15px 0;
+}
+
+.find-features-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+.item-icon{
+    font-size: 25px;
+    
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.id{
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 17px;
+
+}
+
+.find-recommended{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    height: 250px;
+    padding: 20px 0;
+    color:rgba(0, 0, 0, 0.5) ;
+    display: flex;
+    flex-direction: column;
+}
+
+.find-recommended-content{
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.find-openChat-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    color:rgba(0, 0, 0, 0.5) ;
+
+}
+
+.find-openChat-title div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.arrow{
+    padding-top: 8px;
+}
+
+.find-openChat-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.find-openChat-items{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+}
+
+.openChat-item-title{
+    grid-column: 1/2;
+    grid-row: 1;
+    font-size: 20px;
+}
+
+.openChat-item-tag{
+    grid-column: 1/2;
+    grid-row: 2;
+    
+}
+
+.openChat-item-tag ul{
+    display: flex;
+    list-style: none;
+    color: rgba(0, 0, 0, 0.5) ;
+}
+.openChat-item-status{
+    grid-column: 1/2;
+    grid-row: 3;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.openChat-item-status img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 40%
+}
+
+.openChat-item-status span{
+    color: palevioletred;
+}
+
+.openChat-item-cover{
+    grid-column: 2/3;
+    grid-row: 1/4;
+}

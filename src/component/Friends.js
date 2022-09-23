@@ -43,7 +43,7 @@ function Friends() {
                     
 
                 </div>
-                <hr></hr>
+                
 
                 <div className='friends-channel'>
                     <div className='friends-channel-header'>

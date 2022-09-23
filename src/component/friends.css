@@ -65,7 +65,7 @@ nav ul li{
     gap: 15px;
 }
 
-.friends-config ul li:nth-child(3){
+.friends-config ul li:last-child{
     margin-right: 15px ;
 }
 .friends-config ul li{
@@ -115,6 +115,7 @@ nav ul li{
     gap: 10px;
     align-items: center;
     padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .friends-profile img{
@@ -130,7 +131,7 @@ nav ul li{
     letter-spacing: 1pt;
 }
 
-.friends-body hr{
+ hr{
     width: 100%;
     margin: 0 auto;
     border: 1px solid rgb(236, 231, 231);
