@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+.containerBox{
+    
+    background: ivory;
+    width: 500px;
+    height: 80%;
+    position: relative;
+    max-height: 800px;    
+}
+
+.friends-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.friends-title{
+    font-weight: 700;
+}
+.friends-config ul{
+    display: flex;
+    gap: 15px;
+}
+
+.friends-config ul li:nth-child(3){
+    margin-right: 15px ;
+}
+.friends-config ul li{
+    list-style: none;
+}
+

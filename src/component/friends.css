@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+.containerBox{
+    
+    background: ivory;
+    width: 500px;
+    height: 80%;
+    position: relative;
+    max-height: 800px;
+    
+        
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(128, 58, 9, 0.562);
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+nav ul li{
+    list-style: none;
+}
+
+.navIcon{
+    color: black;
+}
+
+.navIcon:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.navIcon:focus{
+    color:#FAE100;
+}
+
+.friends-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.friends-title{
+    font-weight: 700;
+}
+.friends-config ul{
+    display: flex;
+    gap: 15px;
+}
+
+.friends-config ul li:nth-child(3){
+    margin-right: 15px ;
+}
+.friends-config ul li{
+    list-style: none;
+}
+
+.friends-info{
+    background-color: rgb(212, 212, 212);
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    font-size: 18px;
+    color: rgba(26, 26, 26, 0.932);
+}
+
+.rightArrow{
+    color: rgb(158, 155, 155);
+    animation: arrowMove 1s ease-in infinite;
+    cursor: pointer;
+}
+
+@keyframes arrowMove{
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: translateX(5px);
+    }
+
+    100%{
+        transform: none;
+    }
+}
+
+.friends-body{
+    height: 521px;
+    overflow: auto;
+    padding: 0 10px;
+    
+}
+
+.friends-profile{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.friends-profile img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 40%;
+}
+
+.friends-profile span{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1pt;
+}
+
+.friends-body hr{
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid rgb(236, 231, 231);
+}
+
+.friends-channel-header{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(158, 155, 155);
+    padding: 10px 0;
+    font-weight: 450;
+}
+
+.friends-channel-list{
+    display: grid;
+    grid-template-columns: 60px 1fr 50px;
+    
+    align-items: center;
+    
+}
+
+.friends-channel-list img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 40%;
+}
+
+.friends-channel-number{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 5px;
+    color: rgb(158, 155, 155);
+}
+
+.friends-channel-list:nth-child(2){
+    font-weight: 500;
+    color: black;
+}
+
+.arrow{
+    cursor: pointer;
+}
