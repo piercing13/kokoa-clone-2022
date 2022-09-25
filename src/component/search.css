@@ -1,3 +1,13 @@
+.containerBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.friends-body{
+    flex:1;
+    overflow: auto;
+}
+
 .find-features{
     display: flex;
     justify-content: space-between;
@@ -33,7 +43,12 @@
 .id{
     border: 1px solid black;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 17px;
+    border: 2px solid;
+    font-weight: 600;
 
 }
 
@@ -83,13 +98,20 @@
 .find-openChat-items{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 5px;
+    
+    
+}
+
+.find-openChat{
+    padding-bottom: 10px;
 }
 
 .openChat-item-title{
     grid-column: 1/2;
     grid-row: 1;
     font-size: 20px;
+    
+    
 }
 
 .openChat-item-tag{
@@ -128,4 +150,32 @@
 .openChat-item-cover{
     grid-column: 2/3;
     grid-row: 1/4;
+}
+
+.openChat-item-cover img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 40px;
+    
+    
+}
+
+.openChat-item-cover{
+    
+    position: relative;
+    text-align: right;
+    }
+
+.openChat-item-cover div{
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 60px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    
 }

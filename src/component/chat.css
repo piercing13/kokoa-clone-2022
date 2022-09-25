@@ -11,12 +11,8 @@
 
 }
 .containerBox{
-    
-    background: ivory;
-    width: 500px;
-    height: 80%;
-    position: relative;
-    max-height: 800px;    
+    display: flex;
+    flex-direction: column;
 }
 
 .friends-header{
@@ -45,6 +41,7 @@
     height: 521px;
     overflow: auto;
     padding: 0 10px;
+    flex: 1;
 }
 
 .chat-item{

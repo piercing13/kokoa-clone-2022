@@ -1,6 +1,7 @@
 import React from 'react'
-import './friends.css'
+
 import './search.css'
+import './nav.css'
 import StatusBar from './StatusBar'
 import Nav from './Nav'
 import { BsSearch ,BsFillGearFill,BsMusicNoteBeamed } from "react-icons/bs";
@@ -8,7 +9,7 @@ import { AiOutlineScan ,AiOutlineContacts, AiOutlineMail, AiFillHeart} from "rea
 import { FaRegAddressBook } from "react-icons/fa";
 import { IoIosArrowForward,IoIosArrowUp } from "react-icons/io";
 import crong from '../img/crong.JPG'
-
+import vbts from '../img/vbts.PNG'
 
 function Search() {
   return (
@@ -84,7 +85,7 @@ function Search() {
                         </div>
 
                         <div className='openChat-item-cover'>
-                            <img/>
+                            <img src={vbts}/>
                             <div> <AiFillHeart/> 326</div>
 
                         </div>
@@ -107,7 +108,7 @@ function Search() {
                         </div>
 
                         <div className='openChat-item-cover'>
-                            <img/>
+                            <img src={vbts}/>
                             <div> <AiFillHeart/> 326</div>
 
                         </div>

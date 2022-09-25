@@ -8,6 +8,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import StatusBar from './component/StatusBar';
 import theme from './theme';
 import Search from './component/Search';
+import More from './component/More';
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -21,6 +22,7 @@ function App() {
                 <Route path='/friends' element={<Friends />}/>
                 <Route path='/chat' element={<Chat />}/>
                 <Route path='/search' element={<Search />}/>
+                <Route path='/more' element={<More/>}/> 
               </Routes>
               
               

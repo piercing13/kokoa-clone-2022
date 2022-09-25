@@ -21,34 +21,7 @@
         
 }
 
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgba(128, 58, 9, 0.562);
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 
-}
-
-
-nav ul li{
-    list-style: none;
-}
-
-.navIcon{
-    color: black;
-}
-
-.navIcon:hover{
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.navIcon:focus{
-    color:#FAE100;
-}
 
 .friends-header{
     display: flex;
