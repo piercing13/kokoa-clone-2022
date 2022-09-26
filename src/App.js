@@ -9,7 +9,15 @@ import StatusBar from './component/StatusBar';
 import theme from './theme';
 import Search from './component/Search';
 import More from './component/More';
+import io from 'socket.io-client';
+import {useState} from 'react';
+
+
 function App() {
+  const socket = io.connect('http://localhost:4000');
+  const [username, setUsername] = useState('');
+  const [room, setRoom] = useState('');
+  
   return (
     <ThemeProvider theme={theme}>
       <Router>
@@ -18,7 +26,8 @@ function App() {
 
               <Routes>
                 <Route exact path='/' element={<Home />} />
-                <Route path='/welcome' element={<Welcome />}/>
+                <Route path='/welcome' element={<Welcome username={username} setUsername={setUsername}
+                socket={socket}/>}/>
                 <Route path='/friends' element={<Friends />}/>
                 <Route path='/chat' element={<Chat />}/>
                 <Route path='/search' element={<Search />}/>

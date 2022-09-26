@@ -2,7 +2,20 @@ import React, {useState,useEffect} from 'react'
 import './welcome.css'
 import { Link } from 'react-router-dom';
 import StatusBar from './StatusBar';
-function Welcome() {
+import {useNavigate} from "react-router-dom"
+
+function Welcome({username, setUsername, socket}) {
+
+    const navigate =useNavigate();
+
+
+    const joinRoom = () =>{
+       if (username !== " ")
+        socket.emit('join _room', {username});
+
+        navigate('/friends', {replace:true});
+    }
+    
     
 
   return (
@@ -19,13 +32,14 @@ function Welcome() {
                     If you have a Kakao Account, <span> log in with your email or phone number.</span>
                 </p>
             </div>
+            
 
             <form className='login-form'>
-                <input type="text" placeholder='Email or phone number'></input>
-                <input type="password" placeholder='Password'></input>
-                <Link to='/friends'>
-                    <button type='submit'>Log In</button>
-                </Link>
+                <input type="text" placeholder='Email or phone number' onChange={(e)=> setUsername(e.target.value)}></input>
+                <input type="text" placeholder='Password'></input>
+                
+                    <button onClick={joinRoom}>Log In</button>
+                
                 
                 <button type='submit'>Sign Up</button>
                 <p>Find Kokoa <span>Account</span> or <span>Password</span></p>
