@@ -31,7 +31,7 @@ function Search() {
 
         </div>
 
-        <div className='friends-body'>
+        <div className='friends-body body'>
             <div className='find-features'>
                 <div className='find-features-item'>
                 <AiOutlineScan className='item-icon'/>

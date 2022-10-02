@@ -1,0 +1,42 @@
+.containerBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.more-body{
+    flex:1;
+    overflow: auto;
+}
+
+.more-info{
+    flex: 1;
+}
+.icon{
+    font-size: 55px;
+    
+}
+
+.friends-profile:last-child{
+    margin-right: 10px;
+}
+
+.icon-2{
+    font-size: 45px;
+    
+}
+
+.more-features{
+    display: flex;
+    
+    flex-wrap: wrap;
+    margin: 20px;
+    
+}
+
+.feature-item{
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}

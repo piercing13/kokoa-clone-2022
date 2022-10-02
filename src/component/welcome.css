@@ -1,6 +1,9 @@
 :root{
     --yellow: #FAE100;
 }
+*{
+    text-decoration: none;
+}
 
 .container{
     display: flex;
@@ -91,6 +94,7 @@ button{
 
 button:hover{
     background-color: rgb(94, 94, 94);
+    color: whitesmoke;
 }
 .login-form p {
     text-align: center;

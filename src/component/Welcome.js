@@ -9,12 +9,7 @@ function Welcome({username, setUsername, socket}) {
     const navigate =useNavigate();
 
 
-    const joinRoom = () =>{
-       if (username !== " ")
-        socket.emit('join _room', {username});
-
-        navigate('/friends', {replace:true});
-    }
+    
     
     
 
@@ -38,7 +33,9 @@ function Welcome({username, setUsername, socket}) {
                 <input type="text" placeholder='Email or phone number' onChange={(e)=> setUsername(e.target.value)}></input>
                 <input type="text" placeholder='Password'></input>
                 
-                    <button onClick={joinRoom}>Log In</button>
+                <Link to='/friends'>
+                    <button type='submit'>Log In</button>
+                </Link>
                 
                 
                 <button type='submit'>Sign Up</button>

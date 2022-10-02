@@ -23,7 +23,7 @@ function Chat() {
 
             </div>
 
-            <div className='chat-body'>
+            <div className='chat-body body'>
                 <div className='chat-item'>
                     <img src={pororo}/>
                     <div className='chat-content'>
